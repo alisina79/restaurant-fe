@@ -1,0 +1,77 @@
+/* Styling for the menu items container */
+#menu_items {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Styling for each menu card */
+.menu_item {
+  width: 250px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.menu_item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Overlay for dark gradient */
+.menu_item::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  z-index: 5px;
+}
+
+/* Text content inside the card */
+#menu_item_desc {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+  color: white;
+}
+
+#menu_item_desc h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+#menu_item_desc p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Button Styling */
+#menu_item_desc button {
+  background-color: #e63946;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#menu_item_desc button:hover {
+  background-color: #d62828;
+}
+.menu_item_desc h2 {
+  margin: 2px;
+}
