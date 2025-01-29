@@ -40,7 +40,7 @@ function MenuPreview() {
             className="menu_item"
             style={{
               background: `url(${item.img_url})`,
-              backgroundSize: "fit-content",
+              backgroundSize: "cover",
             }}
           >
             <div id="menu_item_desc">
